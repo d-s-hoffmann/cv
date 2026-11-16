@@ -6,8 +6,9 @@
 #set par(justify: true, leading: 0.55em, spacing: 1.2em)
 #set grid(column-gutter: 1.2em, row-gutter: 0.55em)
 #show link: set text(fill: rgb(0, 51, 153))
+#set strong(delta: 200)
 
-#let bullet = text(size: 0.9em)[•]
+#let bullet = text(size: 0.9em, fill: luma(110))[•]
 #set list(marker: bullet, body-indent: 0.5em, spacing: 0.85em)
 
 // Section heading: large regular text with a rule underneath.
@@ -25,7 +26,7 @@
 
 // Entry: bold title with the date on the right, followed by details.
 #let entry(title, date, body) = block(below: 2.2em)[
-  #block(below: 0.9em, grid(columns: (1fr, auto), strong(title), date))
+  #block(below: 0.9em, grid(columns: (1fr, auto), title, text(fill: luma(90), date)))
   #body
 ]
 
@@ -54,29 +55,29 @@ Full-Stack Software Engineer with more than 3 years of experience shipping distr
 
 = Work Experience
 
-#entry[Lead Full-Stack Software Engineer at freiheit.com technologies][June 2023 – present][
+#entry[Lead Full-Stack Software Engineer at *freiheit.com technologies*][June 2023 – present][
   - Lead a team of software engineers building products for a distributed warehouse management platform in production across all markets of one of Europe's largest grocery chains.
   - Architected and shipped custom full-stack solutions in Go and TypeScript powering mission-critical systems for invoice processing, credit notes, and difference reconciliation. My solutions process millions of financial documents annually at enterprise scale.
   - Delivered multi-year, high-complexity projects on schedule while meeting stringent quality and reliability standards.
   #note[Technologies: Go, TypeScript, Vue.js, Azure]
 ]
 
-#entry[Student Software Developer at NAVASTO GmbH][Oct 2021 – April 2023][
+#entry[Student Software Developer at *NAVASTO GmbH*][Oct 2021 – April 2023][
   - Coordinated the training, validation and integration of PyTorch models into a framework of cutting edge deep learning solutions for engineering design.
   #note[Technologies: Python, PyTorch, NumPy, Git, CUDA]
 ]
 
 = Education
 
-#entry[M.Sc. in Computer Science at TU Berlin][2020 – 2023][
+#entry[M.Sc. in Computer Science at *TU Berlin*][2020 – 2023][
   - Master Thesis on "Multi-Modal Vision Transformers for Multi-Label Remote Sensing Image Classification" (Grade:~1.0)
 ]
 
-#entry[B.Sc. in Computer Science at TU Berlin][2016 – 2020][]
+#entry[B.Sc. in Computer Science at *TU Berlin*][2016 – 2020][]
 
 = Publications
 
-#entry[Transformer-Based Multi-Modal Learning for Multi-Label Remote Sensing Image Classification][2023][
+#entry[_Transformer-Based Multi-Modal Learning for Multi-Label Remote Sensing Image Classification_][2023][
   *D. S. Hoffmann*, K. N. Clasen, B. Demir \
   _IEEE IGARSS 2023_, pp.~4891–4894 · #link("https://doi.org/10.1109/IGARSS52108.2023.10281927")[doi.org/10.1109/IGARSS52108.2023.10281927]
 ]

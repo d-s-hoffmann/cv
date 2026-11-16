@@ -33,6 +33,8 @@ URL_cmunbmr.otf := $(CMU)/cmunbmr.otf
 SHA_cmunbmr.otf := 923dba8ac37ef2216735a7cb2cd4d191cb6d52d60723ffb86ccf011c769d20d4
 URL_cmunbmo.otf := $(CMU)/cmunbmo.otf
 SHA_cmunbmo.otf := 0bf5b10613096a07236dfc6fd4fae2932e138c1f740f3de006c2a079af285bfa
+URL_cmunbsr.otf := $(CMU)/cmunbsr.otf
+SHA_cmunbsr.otf := 14a5a0f2ae9dae931f52e49ea113c80c5312e304dcf7dce47ba589958eb02962
 URL_cmunbbx.otf := $(CMU)/cmunbbx.otf
 SHA_cmunbbx.otf := 68db6b8f4e73baf957057ddc1316f0e1fff9cf3ecb081a2c1a8917633cd386cf
 URL_cmunbtl.otf := $(CMU)/cmunbtl.otf
@@ -42,7 +44,7 @@ SHA_fa5-solid.otf  := 3fd1f8e855a002e563bff4a88e7be224da1a3543648e742543dcb7c3c9
 URL_fa5-brands.otf := $(FA5)/Font%20Awesome%205%20Brands-Regular-400.otf
 SHA_fa5-brands.otf := f0bb5e75cb2681d91b33efa24ee594df9829089830ca07b6ce8f90246af9d36e
 
-FONTS := $(addprefix $(FONT_DIR)/,cmunbmr.otf cmunbmo.otf cmunbbx.otf cmunbtl.otf fa5-solid.otf fa5-brands.otf)
+FONTS := $(addprefix $(FONT_DIR)/,cmunbmr.otf cmunbmo.otf cmunbsr.otf cmunbbx.otf cmunbtl.otf fa5-solid.otf fa5-brands.otf)
 
 SHASUM := $(shell command -v sha256sum 2>/dev/null || echo shasum -a 256)
 

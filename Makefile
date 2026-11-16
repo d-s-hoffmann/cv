@@ -1,7 +1,7 @@
 # Build the CV with a pinned Typst version and pinned fonts.
 #
 #   make setup   download Typst and the fonts into .tools/ (needs curl, tar, sha256sum/shasum)
-#   make         build cv.pdf
+#   make build   (re)generate cv.pdf, always overwriting it; runs setup first if needed
 #   make clean   remove the downloaded tools and fonts
 
 TYPST_VERSION := 0.15.1
@@ -46,14 +46,13 @@ FONTS := $(addprefix $(FONT_DIR)/,cmunbmr.otf cmunbmo.otf cmunbbx.otf cmunbtl.ot
 
 SHASUM := $(shell command -v sha256sum 2>/dev/null || echo shasum -a 256)
 
-.PHONY: all setup clean
+.PHONY: build setup clean
 
-all: cv.pdf
+build: setup
+	$(TYPST) compile $(TYPST_FLAGS) cv.typ cv.pdf
 
 setup: $(TYPST) $(FONTS)
-
-cv.pdf: cv.typ | $(TYPST) $(FONTS)
-	$(TYPST) compile $(TYPST_FLAGS) $< $@
+	@echo "Setup complete: typst $(TYPST_VERSION) and fonts in .tools/"
 
 $(TYPST):
 	@test -n "$(TARGET)" || { echo "Unsupported platform: $(PLATFORM)" >&2; exit 1; }

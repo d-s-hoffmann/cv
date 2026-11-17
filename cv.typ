@@ -62,7 +62,7 @@ Lead Full-Stack Software Engineer with 3+ years building business-critical finan
   - Hands-on lead of a team of four engineers: own technical direction and final decisions, prioritise the backlog, plan implementation, align international stakeholders, mentor engineers and conduct performance reviews.
   - Own around 20 high-volume, business-critical services for invoice processing, credit notes and difference reconciliation, deployed across 30+ countries in a distributed warehouse management platform.
   - Led the consolidation of large, distributed Oracle SQL tables into a unified MongoDB document model for distributed processing, giving all consumers a standardised and simpler interface.
-  - Built a database-backed distributed lock that keeps distributed updates to multiple entities of a financial data structure consistent, in a long-running process that must not fail, with precisely tuned retries.
+  - Built a database-backed distributed lock that keeps concurrent updates to multiple entities of a financial data structure consistent, in a long-running process that must not fail, with precisely tuned retries.
   - Reduced alert and error volume by roughly 75% as owner of alerting, incident response and bug fixing for complex invoice-handling flows.
   - Ensure every endpoint is covered by integration tests; plan, oversee and implement system tests for all critical business logic and UIs, giving high confidence in the correctness of every change.
   #note[Technologies: Go, TypeScript, Vue.js, gRPC, Oracle SQL, MongoDB, Kubernetes, Azure, Cypress]

@@ -37,33 +37,35 @@
 
 #let contacts = (
   link("https://linkedin.com/in/david-hoffmann-b7b51b228")[#icon(0xf08c, brand: true) David Hoffmann],
+  link("https://github.com/d-s-hoffmann")[#icon(0xf09b, brand: true) d-s-hoffmann],
   link("mailto:d.hoffmann@protonmail.com")[#icon(0xf0e0) d.hoffmann\@protonmail.com],
   link("tel:+4917634503004")[#icon(0xf10b) +49 176 34503004],
 )
 
 #align(center, stack(
-  spacing: 2em,
+  spacing: 1.1em,
   text(size: 25pt)[David Sebastian Hoffmann],
   contacts.join[#h(0.8em)|#h(0.8em)],
+  text(fill: luma(90))[#icon(0xf3c5) Based in Lisbon, Portugal · open to relocation and remote roles],
 ))
 
 // --- Content -----------------------------------------------------------------
 
 = Summary
 
-Lead Full-Stack Software Engineer with 3+ years building business-critical financial systems in Go and TypeScript. I lead a team of four engineers owning around 20 invoice-processing services in 30+ countries for one of Europe's largest grocery chains, from technical direction to production reliability. Cut alert and error volume by roughly 75% and led the consolidation of distributed Oracle SQL tables into a unified document-based data model. Background in deep learning (M.Sc. TU Berlin, grade 1.0; IEEE publication).
+Lead Full-Stack Software Engineer with 3+ years building business-critical financial systems in Go and TypeScript. I lead a team of four engineers owning around 20 invoice-processing services in 30+ countries for one of Europe's largest grocery chains, from technical direction to production reliability. Cut alert and error volume by roughly 75% and led the consolidation of distributed Oracle SQL tables into a unified MongoDB document model. Background in deep learning (M.Sc. TU Berlin, grade 1.0; IEEE publication).
 
 = Work Experience
 
 #entry[Lead Full-Stack Software Engineer at *freiheit.com technologies*][April 2026 – present][
   #text(fill: luma(90))[Software Engineer, June 2023 – March 2026 · promoted to Lead]
   - Lead a team of four engineers: own the technical direction and final technical decisions, prioritise the backlog, plan implementation effort, mentor engineers and conduct performance reviews.
-  - Own around 20 business-critical services for invoice processing, credit notes and difference reconciliation, deployed across 30+ countries within a distributed warehouse management platform and handling high-volume daily invoice flows.
-  - Led the consolidation of large, distributed Oracle SQL tables into a unified document-based data model for distributed processing, giving all consumers a standardised and simpler interface.
+  - Own around 20 high-volume, business-critical services for invoice processing, credit notes and difference reconciliation, deployed across 30+ countries in a distributed warehouse management platform.
+  - Led the consolidation of large, distributed Oracle SQL tables into a unified MongoDB document model for distributed processing, giving all consumers a standardised and simpler interface.
   - Reduced alert and error volume by roughly 75% as owner of alerting, incident response and bug fixing for complex invoice-handling flows.
-  - Established endpoint-level integration testing as a team-wide standard, significantly improving endpoint stability and reducing bug occurrence.
-  - Align international business stakeholders on scope, priorities and delivery plans; integrated AI coding agents into the team's daily workflow.
-  #note[Technologies: Go, TypeScript, Vue.js, gRPC, Oracle SQL, Kubernetes, Azure, Cypress]
+  - Established endpoint-level integration testing as a team-wide standard, giving the team high confidence in the correctness of every change and improving endpoint stability.
+  - Align international business stakeholders on scope, priorities and delivery plans; led my team's rollout of a project-wide AI coding agent workflow.
+  #note[Technologies: Go, TypeScript, Vue.js, gRPC, Oracle SQL, MongoDB, Kubernetes, Azure, Cypress]
 ]
 
 #entry[Student Software Developer at *NAVASTO GmbH*][Oct 2021 – April 2023][

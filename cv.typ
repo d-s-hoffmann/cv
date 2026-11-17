@@ -13,7 +13,7 @@
 
 // Section heading: large regular text with a rule underneath.
 #show heading.where(level: 1): it => block(
-  above: 28pt, below: 11pt, width: 100%,
+  above: 20pt, below: 10pt, width: 100%,
   inset: (bottom: 5.5pt), stroke: (bottom: 0.4pt),
   text(size: 14pt, weight: "regular", it.body),
 )
@@ -25,7 +25,7 @@
 )
 
 // Entry: bold title with the date on the right, followed by details.
-#let entry(title, date, body) = block(below: 2.2em)[
+#let entry(title, date, body) = block(below: 1.6em)[
   #block(below: 0.9em, grid(columns: (1fr, auto), title, text(fill: luma(90), date)))
   #body
 ]
@@ -38,7 +38,7 @@
 #let contacts = (
   link("https://linkedin.com/in/david-hoffmann-b7b51b228")[#icon(0xf08c, brand: true) David Hoffmann],
   link("mailto:d.hoffmann@protonmail.com")[#icon(0xf0e0) d.hoffmann\@protonmail.com],
-  link("tel:+4917634503004")[#icon(0xf10b) +4917634503004],
+  link("tel:+4917634503004")[#icon(0xf10b) +49 176 34503004],
 )
 
 #align(center, stack(
@@ -51,26 +51,30 @@
 
 = Summary
 
-Full-Stack Software Engineer with more than 3 years of experience shipping distributed solutions for large-scale, highly reliable applications. I excel in a high-stakes, high-reward environment, and am adept at delivering impactful solutions with a focus on reliability and quality. My experience in international and collaborative development on large-scale software projects allows me to tackle big challenges with a perspective of long-term planning and ensuring timely delivery. My work prioritizes systemic quality and operational resilience, ensuring solutions not only meet user needs effectively but remain sustainable at scale. Currently applying this focus to build financial systems and warehouse operations for one of Europe's largest grocery chains.
+Lead Full-Stack Software Engineer with 3+ years building business-critical financial systems in Go and TypeScript. I lead a team of four engineers owning around 20 invoice-processing services in 30+ countries for one of Europe's largest grocery chains, from technical direction to production reliability. Cut alert and error volume by roughly 75% and led the consolidation of distributed Oracle SQL tables into a unified document-based data model. Background in deep learning (M.Sc. TU Berlin, grade 1.0; IEEE publication).
 
 = Work Experience
 
-#entry[Lead Full-Stack Software Engineer at *freiheit.com technologies*][June 2023 – present][
-  - Lead a team of software engineers building products for a distributed warehouse management platform in production across all markets of one of Europe's largest grocery chains.
-  - Architected and shipped custom full-stack solutions in Go and TypeScript powering mission-critical systems for invoice processing, credit notes, and difference reconciliation. My solutions process millions of financial documents annually at enterprise scale.
-  - Delivered multi-year, high-complexity projects on schedule while meeting stringent quality and reliability standards.
-  #note[Technologies: Go, TypeScript, Vue.js, Azure]
+#entry[Lead Full-Stack Software Engineer at *freiheit.com technologies*][April 2026 – present][
+  #text(fill: luma(90))[Software Engineer, June 2023 – March 2026 · promoted to Lead]
+  - Lead a team of four engineers: own the technical direction and final technical decisions, prioritise the backlog, plan implementation effort, mentor engineers and conduct performance reviews.
+  - Own around 20 business-critical services for invoice processing, credit notes and difference reconciliation, deployed across 30+ countries within a distributed warehouse management platform and handling high-volume daily invoice flows.
+  - Led the consolidation of large, distributed Oracle SQL tables into a unified document-based data model for distributed processing, giving all consumers a standardised and simpler interface.
+  - Reduced alert and error volume by roughly 75% as owner of alerting, incident response and bug fixing for complex invoice-handling flows.
+  - Established endpoint-level integration testing as a team-wide standard, significantly improving endpoint stability and reducing bug occurrence.
+  - Align international business stakeholders on scope, priorities and delivery plans; integrated AI coding agents into the team's daily workflow.
+  #note[Technologies: Go, TypeScript, Vue.js, gRPC, Oracle SQL, Kubernetes, Azure, Cypress]
 ]
 
 #entry[Student Software Developer at *NAVASTO GmbH*][Oct 2021 – April 2023][
-  - Coordinated the training, validation and integration of PyTorch models into a framework of cutting edge deep learning solutions for engineering design.
-  #note[Technologies: Python, PyTorch, NumPy, Git, CUDA]
+  - Trained, validated and integrated PyTorch models into a deep learning platform for AI-driven engineering design.
+  #note[Technologies: Python, PyTorch, NumPy, CUDA, Git]
 ]
 
 = Education
 
-#entry[M.Sc. in Computer Science at *TU Berlin*][2020 – 2023][
-  - Master Thesis on "Multi-Modal Vision Transformers for Multi-Label Remote Sensing Image Classification" (Grade:~1.0)
+#entry[M.Sc. in Computer Science at *TU Berlin* · Final grade 1.0 (best possible)][2020 – 2023][
+  - Thesis: "Multi-Modal Vision Transformers for Multi-Label Remote Sensing Image Classification", published at IEEE IGARSS 2023
 ]
 
 #entry[B.Sc. in Computer Science at *TU Berlin*][2016 – 2020][]
@@ -86,10 +90,9 @@ Full-Stack Software Engineer with more than 3 years of experience shipping distr
 
 #grid(
   columns: (auto, 1fr),
-  [Programming Languages:], [Go, TypeScript, Python, C],
-  [Technologies:], [SQL, Postgres, MongoDB, k8s, gRPC, Azure, Vue.js, Cypress, Pytorch, Linux, Git],
-  [Tools:], [gRPC, Azure, Vue.js, PyTorch, Linux, Git],
-  [Skills:], [Micro-service architectures , CI/CD, Machine Learning, Remote Sensing, Agentic workflows at higher quality, Testing functionality],
-  [Soft Skills:], [Getting it done mindset, Collaborative but presistent, Enthusiastic about trying new things, Not shying from hard questions, Builindg a culture for software reliability],
-  [Languages:], [English (fluent), German (native), Portuguese (basic level)],
+  [Programming:], [Go, TypeScript (Vue.js), Python, SQL, C],
+  [Backend & Infra:], [gRPC, Oracle SQL, PostgreSQL, MongoDB, Docker, Kubernetes, Terraform, Azure, Git],
+  [Machine Learning:], [PyTorch, NumPy, CUDA, Computer Vision, Remote Sensing],
+  [Practices:], [Microservices, data migration, integration & E2E testing (Cypress), CI/CD, incident response, AI coding agents],
+  [Languages:], [German (native), English (fluent), Portuguese (basic)],
 )

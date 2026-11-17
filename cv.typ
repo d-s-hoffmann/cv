@@ -2,7 +2,7 @@
 
 #set document(title: "CV – David Sebastian Hoffmann", author: "David Sebastian Hoffmann", date: none)
 #set page(paper: "a4", margin: (left: 20mm, right: 15mm, top: 15mm, bottom: 10mm))
-#set text(font: "CMU Bright", size: 10pt, lang: "en")
+#set text(font: "CMU Bright", size: 10pt, lang: "en", hyphenate: false)
 #set par(justify: true, leading: 0.55em, spacing: 1.2em)
 #set grid(column-gutter: 1.2em, row-gutter: 0.55em)
 #show link: set text(fill: rgb(0, 51, 153))
@@ -45,6 +45,7 @@
 #align(center, stack(
   spacing: 1.1em,
   text(size: 25pt)[David Sebastian Hoffmann],
+  text(size: 12pt)[Team Lead · Full-Stack Software Engineer · Go · Distributed financial systems],
   contacts.join[#h(0.8em)|#h(0.8em)],
   text(fill: luma(90))[#icon(0xf3c5) Based in Lisbon, Portugal · open to relocation and remote roles],
 ))
@@ -53,17 +54,17 @@
 
 = Summary
 
-Lead Full-Stack Software Engineer with 3+ years building business-critical financial systems in Go and TypeScript. As a hands-on lead of four engineers, I own around 20 invoice-processing services in 30+ countries for one of Europe's largest grocery chains, from architecture and code to production reliability. Cut alert and error volume by roughly 75% and led the consolidation of distributed Oracle SQL tables into a unified MongoDB document model. Background in deep learning (M.Sc. TU Berlin, grade 1.0; IEEE publication).
+Team Lead and full-stack software engineer with 3+ years building business-critical financial systems in Go and TypeScript. As a hands-on lead of four engineers, I own around 20 invoice-processing services in 30+ countries for one of Europe's largest grocery chains, from architecture and code to production reliability. Cut alert and error volume by roughly 75% and led the consolidation of distributed Oracle SQL tables into a unified MongoDB document model. Background in deep learning (M.Sc. TU Berlin, grade 1.0; IEEE publication).
 
 = Work Experience
 
-#entry[Lead Full-Stack Software Engineer at *freiheit.com technologies*][April 2026 – present][
-  #text(fill: luma(90))[Software Engineer, June 2023 – March 2026 · promoted to Lead]
+#entry[Team Lead, Full-Stack Software Engineering at *freiheit.com technologies*][April 2026 – present][
+  #text(fill: luma(90))[Software Engineer, June 2023 – March 2026 · promoted to Team Lead]
   - Hands-on lead of a team of four engineers: own technical direction and final decisions, prioritise the backlog, plan implementation, align international stakeholders, mentor engineers and conduct performance reviews.
   - Own around 20 high-volume, business-critical services for invoice processing, credit notes and difference reconciliation, deployed across 30+ countries in a distributed warehouse management platform.
   - Led the consolidation of large, distributed Oracle SQL tables into a unified MongoDB document model for distributed processing, giving all consumers a standardised and simpler interface.
   - Built a database-backed distributed lock that keeps concurrent updates to multiple entities of a financial data structure consistent, in a long-running process that must not fail, with precisely tuned retries.
-  - Reduced alert and error volume by roughly 75% as owner of alerting, incident response and bug fixing for complex invoice-handling flows.
+  - Reduced alert and error volume by roughly 75% as owner of alerting, incident response and bug fixing; full monitoring of every team-owned service, with no data loss in production.
   - Ensure every endpoint is covered by integration tests; plan, oversee and implement system tests for all critical business logic and UIs, giving high confidence in the correctness of every change.
   #note[Technologies: Go, TypeScript, Vue.js, gRPC, Oracle SQL, MongoDB, Kubernetes, Azure, Cypress]
 ]
@@ -76,7 +77,7 @@ Lead Full-Stack Software Engineer with 3+ years building business-critical finan
 = Education
 
 #entry[M.Sc. in Computer Science at *TU Berlin* · Final grade 1.0 (best possible)][2020 – 2023][
-  - Thesis: "Multi-Modal Vision Transformers for Multi-Label Remote Sensing Image Classification", published at IGARSS 2023
+  - Thesis on multi-modal vision transformers for remote sensing image classification, published at IEEE IGARSS 2023
 ]
 
 #entry[B.Sc. in Computer Science at *TU Berlin*][2016 – 2020][]

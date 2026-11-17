@@ -87,8 +87,9 @@ Full-Stack Software Engineer with more than 3 years of experience shipping distr
 #grid(
   columns: (auto, 1fr),
   [Programming Languages:], [Go, TypeScript, Python, C],
+  [Technologies:], [SQL, Postgres, MongoDB, k8s, gRPC, Azure, Vue.js, Cypress, Pytorch, Linux, Git],
   [Tools:], [gRPC, Azure, Vue.js, PyTorch, Linux, Git],
-  [Skills:], [Micro-service architectures, CI/CD, Machine Learning, Remote Sensing],
-  [Soft Skills:], [Independent Problem Solving, Collaborative Development, Enthusiastic Learner, Critical Analysis, Reliable Maintainer],
+  [Skills:], [Micro-service architectures , CI/CD, Machine Learning, Remote Sensing, Agentic workflows at higher quality, Testing functionality],
+  [Soft Skills:], [Getting it done mindset, Collaborative but presistent, Enthusiastic about trying new things, Not shying from hard questions, Builindg a culture for software reliability],
   [Languages:], [English (fluent), German (native), Portuguese (basic level)],
 )

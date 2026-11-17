@@ -59,12 +59,12 @@ Lead Full-Stack Software Engineer with 3+ years building business-critical finan
 
 #entry[Lead Full-Stack Software Engineer at *freiheit.com technologies*][April 2026 – present][
   #text(fill: luma(90))[Software Engineer, June 2023 – March 2026 · promoted to Lead]
-  - Lead a team of four engineers: own the technical direction and final technical decisions, prioritise the backlog, plan implementation effort, mentor engineers and conduct performance reviews.
+  - Lead a team of four engineers: own technical direction and final decisions, prioritise the backlog, plan implementation, align international stakeholders, mentor engineers and conduct performance reviews.
   - Own around 20 high-volume, business-critical services for invoice processing, credit notes and difference reconciliation, deployed across 30+ countries in a distributed warehouse management platform.
   - Led the consolidation of large, distributed Oracle SQL tables into a unified MongoDB document model for distributed processing, giving all consumers a standardised and simpler interface.
+  - Implemented a database-backed distributed locking mechanism for a long-running financial process that must not fail, with carefully engineered retry behaviour.
   - Reduced alert and error volume by roughly 75% as owner of alerting, incident response and bug fixing for complex invoice-handling flows.
-  - Established endpoint-level integration testing as a team-wide standard, giving the team high confidence in the correctness of every change and improving endpoint stability.
-  - Align international business stakeholders on scope, priorities and delivery plans; led my team's rollout of a project-wide AI coding agent workflow.
+  - Set the team's testing standard: integration tests on every endpoint and system tests on all critical business logic and UIs, giving high confidence in the correctness of every change. Led the team's rollout of a project-wide AI coding agent workflow.
   #note[Technologies: Go, TypeScript, Vue.js, gRPC, Oracle SQL, MongoDB, Kubernetes, Azure, Cypress]
 ]
 
@@ -76,7 +76,7 @@ Lead Full-Stack Software Engineer with 3+ years building business-critical finan
 = Education
 
 #entry[M.Sc. in Computer Science at *TU Berlin* · Final grade 1.0 (best possible)][2020 – 2023][
-  - Thesis: "Multi-Modal Vision Transformers for Multi-Label Remote Sensing Image Classification", published at IEEE IGARSS 2023
+  - Thesis: "Multi-Modal Vision Transformers for Multi-Label Remote Sensing Image Classification", published at IGARSS 2023
 ]
 
 #entry[B.Sc. in Computer Science at *TU Berlin*][2016 – 2020][]
@@ -95,6 +95,6 @@ Lead Full-Stack Software Engineer with 3+ years building business-critical finan
   [Programming:], [Go, TypeScript (Vue.js), Python, SQL, C],
   [Backend & Infra:], [gRPC, Oracle SQL, PostgreSQL, MongoDB, Docker, Kubernetes, Terraform, Azure, Git],
   [Machine Learning:], [PyTorch, NumPy, CUDA, Computer Vision, Remote Sensing],
-  [Practices:], [Microservices, data migration, integration & E2E testing (Cypress), CI/CD, incident response, AI coding agents],
+  [Practices:], [Microservices, distributed locking, integration & system testing, CI/CD, incident response],
   [Languages:], [German (native), English (fluent), Portuguese (basic)],
 )

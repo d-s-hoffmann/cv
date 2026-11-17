@@ -53,18 +53,18 @@
 
 = Summary
 
-Lead Full-Stack Software Engineer with 3+ years building business-critical financial systems in Go and TypeScript. I lead a team of four engineers owning around 20 invoice-processing services in 30+ countries for one of Europe's largest grocery chains, from technical direction to production reliability. Cut alert and error volume by roughly 75% and led the consolidation of distributed Oracle SQL tables into a unified MongoDB document model. Background in deep learning (M.Sc. TU Berlin, grade 1.0; IEEE publication).
+Lead Full-Stack Software Engineer with 3+ years building business-critical financial systems in Go and TypeScript. As a hands-on lead of four engineers, I own around 20 invoice-processing services in 30+ countries for one of Europe's largest grocery chains, from architecture and code to production reliability. Cut alert and error volume by roughly 75% and led the consolidation of distributed Oracle SQL tables into a unified MongoDB document model. Background in deep learning (M.Sc. TU Berlin, grade 1.0; IEEE publication).
 
 = Work Experience
 
 #entry[Lead Full-Stack Software Engineer at *freiheit.com technologies*][April 2026 – present][
   #text(fill: luma(90))[Software Engineer, June 2023 – March 2026 · promoted to Lead]
-  - Lead a team of four engineers: own technical direction and final decisions, prioritise the backlog, plan implementation, align international stakeholders, mentor engineers and conduct performance reviews.
+  - Hands-on lead of a team of four engineers: own technical direction and final decisions, prioritise the backlog, plan implementation, align international stakeholders, mentor engineers and conduct performance reviews.
   - Own around 20 high-volume, business-critical services for invoice processing, credit notes and difference reconciliation, deployed across 30+ countries in a distributed warehouse management platform.
   - Led the consolidation of large, distributed Oracle SQL tables into a unified MongoDB document model for distributed processing, giving all consumers a standardised and simpler interface.
-  - Implemented a database-backed distributed locking mechanism for a long-running financial process that must not fail, with carefully engineered retry behaviour.
+  - Built a database-backed distributed lock that keeps distributed updates to multiple entities of a financial data structure consistent, in a long-running process that must not fail, with precisely tuned retries.
   - Reduced alert and error volume by roughly 75% as owner of alerting, incident response and bug fixing for complex invoice-handling flows.
-  - Set the team's testing standard: integration tests on every endpoint and system tests on all critical business logic and UIs, giving high confidence in the correctness of every change. Led the team's rollout of a project-wide AI coding agent workflow.
+  - Enforce integration tests on every endpoint without exception; plan, oversee and implement system tests for all critical business logic and UIs, giving high confidence in the correctness of every change.
   #note[Technologies: Go, TypeScript, Vue.js, gRPC, Oracle SQL, MongoDB, Kubernetes, Azure, Cypress]
 ]
 
@@ -95,6 +95,6 @@ Lead Full-Stack Software Engineer with 3+ years building business-critical finan
   [Programming:], [Go, TypeScript (Vue.js), Python, SQL, C],
   [Backend & Infra:], [gRPC, Oracle SQL, PostgreSQL, MongoDB, Docker, Kubernetes, Terraform, Azure, Git],
   [Machine Learning:], [PyTorch, NumPy, CUDA, Computer Vision, Remote Sensing],
-  [Practices:], [Microservices, distributed locking, integration & system testing, CI/CD, incident response],
+  [Practices:], [Microservices, distributed locking, integration & system testing, CI/CD, incident response, AI coding agents],
   [Languages:], [German (native), English (fluent), Portuguese (basic)],
 )

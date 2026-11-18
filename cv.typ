@@ -30,6 +30,12 @@
   #body
 ]
 
+// Role within a company entry: title with its own dates, then its bullets.
+#let role(title, date, body) = block(above: 0.8em, below: 0.6em)[
+  #block(below: 0.7em, grid(columns: (1fr, auto), emph(title), text(fill: luma(90), date)))
+  #body
+]
+
 // Unbulleted line aligned with the bullet text.
 #let note(body) = context block(above: 0.85em, pad(left: measure(bullet).width + 0.5em, body))
 
@@ -58,14 +64,17 @@ Team Lead and full-stack software engineer with 3+ years building business-criti
 
 = Work Experience
 
-#entry[Team Lead, Full-Stack Software Engineering at *freiheit.com technologies*][April 2026 – present][
-  #text(fill: luma(90))[Software Engineer, June 2023 – March 2026 · promoted to Team Lead]
+#entry[*freiheit.com technologies*][June 2023 – present][
+  #role[Team Lead, Full-Stack Software Engineering][April 2026 – present][
   - Hands-on lead of a team of four engineers: own technical direction and final decisions, prioritise the backlog, plan implementation, align international stakeholders, mentor engineers and conduct performance reviews.
   - Own around 20 high-volume, business-critical services for invoice processing, credit notes and difference reconciliation, deployed across 30+ countries in a distributed warehouse management platform.
+  ]
+  #role[Full-Stack Software Engineer][June 2023 – March 2026][
   - Led the consolidation of large, distributed Oracle SQL tables into a unified MongoDB document model for distributed processing, giving all consumers a standardised and simpler interface.
   - Built a database-backed distributed lock that keeps concurrent updates to multiple entities of a financial data structure consistent, in a long-running process that must not fail, with precisely tuned retries.
-  - Reduced alert and error volume by roughly 75% as owner of alerting, incident response and bug fixing; full monitoring of every team-owned service, with no data loss in production.
-  - Ensure every endpoint is covered by integration tests; plan, oversee and implement system tests for all critical business logic and UIs, giving high confidence in the correctness of every change.
+  - Reduced alert and error volume by roughly 75% as owner of alerting, incident response and bug fixing; set up full monitoring of every team-owned service, with no data loss in production.
+  - Introduced endpoint-level integration testing as a team-wide pattern, and planned and implemented system tests for all critical business logic and UIs, giving high confidence in the correctness of every change.
+  ]
   #note[Technologies: Go, TypeScript, Vue.js, gRPC, Oracle SQL, MongoDB, Kubernetes, Azure, Cypress]
 ]
 
@@ -96,6 +105,6 @@ Team Lead and full-stack software engineer with 3+ years building business-criti
   [Programming:], [Go, TypeScript (Vue.js), Python, SQL, C],
   [Backend & Infra:], [gRPC, Oracle SQL, PostgreSQL, MongoDB, Docker, Kubernetes, Terraform, Azure, Git],
   [Machine Learning:], [PyTorch, NumPy, CUDA, Computer Vision, Remote Sensing],
-  [Practices:], [Microservices, distributed locking, integration & system testing, CI/CD, incident response, AI coding agents],
+  [Practices:], [Microservices, distributed locking, integration & system testing, CI/CD, AI coding agents],
   [Languages:], [German (native), English (fluent), Portuguese (basic)],
 )
